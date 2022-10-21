@@ -1,0 +1,36 @@
+{% load static %}
+{% load django_bootstrap5 %}
+{% load fontawesome_6 %}
+{% fontawesome_6_static %}
+{% bootstrap_css %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-primary text-white">
+            <div class="col-12">
+                <h1>Welcome to Digital Business Technology Group</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 bg-success text-white" >
+                Menu>>>>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br>
+            </div>
+            <div class="col-10 bg-white">
+                {% block content %}
+
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
